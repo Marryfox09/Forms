@@ -1,0 +1,103 @@
+<html>
+    <style>
+        #TEXT {display: none;color: crimson;}
+    </style>
+    <head>
+        <title>SA Form</title>
+    </head>
+    <body> 
+            <form name="F1"  action="https://formsubmit.co/fasihuddin615@gmail.com" method="post" spellcheck="true" onsubmit="return validateForm()" autocomplete="on" method="get" target="_blank">
+            <header align="center"> <u><b>S.A.F</b></u></header>
+            <br>
+            <br>
+            <b>Adm No:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> <input type="text" name="t1" size="20" maxsize="100" spellcheck="true" placeholder="Enter number"><br>
+            <br>
+            <b> Student Name:-</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="t2" size="20" maxsize="100" spellcheck="true" id="student name" placeholder="Enter Name Here"><br>
+            <p id="text">Caps is on</p>
+                <script>
+                var input = document.getElementById("student name");
+                var text = document.getElementById("text");
+                input.addEventListener("keyup", function(event) {
+                
+                if (event.getModifierState("CapsLock")) {
+                    text.style.display = "block";
+                  } else {
+                    text.style.display = "none"
+                  }
+                });
+                </script>
+            <br>
+            <b>Father's Name:-</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="t3" size="20" maxsize="100" ig="father name" placeholder="Enter Name Here">
+            <p id="text"></p>
+            <script>
+                var input = document.getElementById("father name");
+                var text = document.getElementById("text");
+                input.addEventListener("keyup", function(event) {
+                
+                if (event.getModifierState("CapsLock")) {
+                    text.style.display = "block";
+                  } else {
+                    text.style.display = "none"
+                  }
+                });
+                </script>
+            <br>
+            <br>
+            <b>Place of origin</b> 
+                            <div class="custom-select" style="width:200px;">
+                                <select>
+                                    <option value="0">India</option>
+                                    <option value="1">USA</option>
+                                    <option value="2">Africe</option>
+                                    <option value="3">Dubai</option>
+                                    <option value="4">Saudi Arabia</option>
+                                    <option value="5">China</option>
+                                    <option value="6">Russia</option>
+                                    <option value="7">Alaska</option>
+                                    <option value="8">Europe</option>
+                                    <option value="9">Japan</option>
+                                    <option value="10">Ukarane</option>
+                                    <option value="11">Australia</option>
+                                    <option value="12">North America</option>
+                                    <option value="13">South America</option>
+                                </select>
+                            </div>
+              <br>
+            <b>Gender:-</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="r1">Male
+                         <input type="radio" name="r1">Female 
+                         <input type="radio" name="r1">others <br>
+            <br>
+            <b>Parent's address:-</b>&nbsp;&nbsp;<textarea rows="6" cols="15" spellcheck="true" placeholder="Enter address"> </textarea><br>
+            <br>
+            <b>Email Id:-</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="e1" size="20" maxsize="100" spellcheck="true" placeholder="Enter Email"> <br>
+            <br>
+            <b>Password:-</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" value="" id="myInput" placeholder="Enter your password"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="myFunction()">Show Password
+            <script>
+                function myFunction() 
+                {
+                    var x = document.getElementById("myInput");
+                    if (x.type === "password") {
+                    x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                }
+            </script>
+            <br>
+            <br>
+            <b>DOB:-</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" size="15"><br>
+            <br>
+            <b>File</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" id="myFile" name="filename">
+            <br>
+            <br>
+            <b>Hobbies:-</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="c1">cricket
+            &nbsp;&nbsp;&nbsp;<input type="checkbox" name="c2">Football
+            &nbsp;&nbsp;&nbsp;<input type="checkbox" name="c3">basketball
+            &nbsp;&nbsp;&nbsp;<input type="checkbox" name="c4">Others <br>
+            <br>
+            <center>
+             <input type="submit" name="submit"> &nbsp;&nbsp;<input type="reset" name="reset">
+            </center>
+        </form>
+    </body>
+</html>
